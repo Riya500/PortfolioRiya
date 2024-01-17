@@ -56,7 +56,7 @@ def contactmail():
             <html>
             <body>
             <p>Hello, {name}.<br>
-            Thanks for contacting Shivansh. He will get in touch with you shortly on the following contact details provided by you.</p><br>
+            Thanks for contacting Riya. He will get in touch with you shortly on the following contact details provided by you.</p><br>
             <p>Name : <span style='font-weight:bolder'>{name}</span></p>
             <p>Email : <span style='font-weight:bolder'>{email}</span></p>
             <p>Mobile No. : <span style='font-weight:bolder'>{mobile}</span></p>
@@ -66,8 +66,9 @@ def contactmail():
             """
     
     res = SendEmail(email,f'Thanks for contacting me, {name}', body)
-    SendEmail('shivanshkumar752@gmail.com', f"{name} contacted you via portfolio website", body)
+    SendEmail('riyadhawan2711@gmail.com', f"{name} contacted you via portfolio website", body)
     return render_template('contact.html', res = res)
+
 
 
 if __name__=='__main__':
