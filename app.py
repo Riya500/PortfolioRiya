@@ -19,7 +19,7 @@ def SendEmail(toaddr,subject,message):
         s.login(fromaddr, "kxwapeedoljoghol")
         text = msg.as_string()
         s.sendmail(fromaddr, toaddr, text)
-        return "Email successfully sent. Wait for Shivansh to contact you."
+        return "Email sent. Wait for Riya to contact you."
     except:
         return "An Error occured while sending email."
     finally:
@@ -68,7 +68,6 @@ def contactmail():
     res = SendEmail(email,f'Thanks for contacting me, {name}', body)
     SendEmail('riyadhawan2711@gmail.com', f"{name} contacted you via portfolio website", body)
     return render_template('contact.html', res = res)
-
 
 
 if __name__=='__main__':

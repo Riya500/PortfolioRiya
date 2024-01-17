@@ -7,8 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <style>
-        </style>
         <script>
             function show(clicked){
                 buttonsid = ['emailbot','colorify','chatgptclone','sentimentanalysis','ner'];
@@ -57,6 +55,7 @@
         </script>
     </head>
     <body>
+        
     <body class="projectbody">
         <div style="display: block;margin-right: auto;margin-left: auto;width: 75%; ">
             <div class="header">
@@ -67,7 +66,6 @@
                     </div>
                     </div>
             </div>
-            <div style="position: relative; top: 125px;">
             <div class="projectscontainer">
                 <div class="projectslist">
                     <ul>
@@ -80,19 +78,8 @@
                 </div>
                 <div class="projectcontent">
                     <p id="projectcontentbody">Hey Welcome, Wanna see my projects. <br> Toggle the menu on the left.</p>
+                    <div style="text-align: center; position: absolute; bottom: 5px; width: 100%; left: 0;"><a style="color: #FF2C55; background-color: transparent;" target="_blank" href="https://github.com/riya500">Checkout Riya's Github Here!!!</a></div>
                 </div>
-                </div>    
-                <a style="color: white; background-color: transparent; width: 100%; display: block; text-align: center;" target="_blank" href="https://github.com/riya500">Checkout Riya's Github Here!!!</a>
             </div>
-            <div class="cursor"></div>
-            <div class="cursor2"></div>
-
-            <script>
-                var cursor = document.querySelector(".cursor");
-                var cursor2 = document.querySelector(".cursor2");
-                document.addEventListener("mousemove",function(e){
-                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-                });
-            </script>
     </body>
 </html>
